@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.cocktailbook.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_drinkDetailsFragment2"
+            app:destination="@id/drinkDetailsFragment2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_searchDrink"
+        android:name="com.example.cocktailbook.ui.searchDrink.SearchDrinkFragment"
+        android:label="@string/title_searchDrink"
+        tools:layout="@layout/fragment_search_drink" >
+        <action
+            android:id="@+id/action_navigation_searchDrink_to_drinkDetailsFragment2"
+            app:destination="@id/drinkDetailsFragment2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_user"
+        android:name="com.example.cocktailbook.ui.user.UserFragment"
+        android:label="@string/title_user"
+        tools:layout="@layout/fragment_user" >
+        <action
+            android:id="@+id/action_navigation_user_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@+id/navigation_home"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_user_to_drinkDetailsFragment2"
+            app:destination="@id/drinkDetailsFragment2" />
+        <action
+            android:id="@+id/action_navigation_user_to_createRecipeFragment"
+            app:destination="@id/createRecipeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drinkDetailsFragment2"
+        android:name="com.example.cocktailbook.ui.DrinkDetailsFragment"
+        android:label=""
+        tools:layout="@layout/fragment_drink_details" />
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="com.example.cocktailbook.ui.user.LoginFragment"
+        android:label="Log In"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_navigation_user"
+            app:destination="@id/navigation_user" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.cocktailbook.ui.user.RegisterFragment"
+        android:label="Regestration"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_navigation_user"
+            app:destination="@id/navigation_user" />
+    </fragment>
+    <fragment
+        android:id="@+id/createRecipeFragment"
+        android:name="com.example.cocktailbook.ui.user.CreateRecipeFragment"
+        android:label="Create New Recipe"
+        tools:layout="@layout/fragment_create_recipe" />
+</navigation>

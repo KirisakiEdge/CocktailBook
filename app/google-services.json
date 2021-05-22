@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "860704118771",
+    "project_id": "cocktailbook-7b2d7",
+    "storage_bucket": "cocktailbook-7b2d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860704118771:android:47f431c160da359998e486",
+        "android_client_info": {
+          "package_name": "com.example.cocktailbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860704118771-clhhv2g2p3cue1m0fbod87qh1d66jl13.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaNp6aJfvu5-4P7024dHDKGYtJOeLXufw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "860704118771-clhhv2g2p3cue1m0fbod87qh1d66jl13.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
